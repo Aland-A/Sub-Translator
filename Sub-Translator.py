@@ -4,12 +4,15 @@ import re
 translator = Translator()
 
 
+# def isNum(input_string):
+#     if input_string:
+#         if input_string[0].isdigit() and input_string[-1].isdigit():
+#             return True
+#     return False
+
 def isNum(input_string):
     if input_string:
-        if input_string[0].isdigit() and input_string[-1].isdigit():
-            return True
-    return False
-
+        return input_string[0].isdigit() and input_string[-1].isdigit()
 
 sub_source = "source.srt"
 output_file_path = "output.txt"
